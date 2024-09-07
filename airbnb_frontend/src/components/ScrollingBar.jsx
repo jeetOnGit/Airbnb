@@ -12,7 +12,7 @@ function ScrollingBar() {
   const [ishome, setIsHome] = useState(false)
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/category/all')
+    fetch('https://airbnb-dl81.onrender.com/api/category/all')
       .then(response => response.json())
       .then(data => setCategoriesData(data.data.categories))
       .catch(error => console.error('Error fetching hotels:', error));

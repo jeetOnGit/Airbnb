@@ -12,7 +12,7 @@ function Home() {
 
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/products/all')
+    fetch('https://airbnb-dl81.onrender.com/api/products/all')
       .then(response => response.json())
       // .then(data => console.log(data.data.products[0].name))
       .then(data => setHotelData(data.data.products))
