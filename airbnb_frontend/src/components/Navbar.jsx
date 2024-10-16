@@ -45,7 +45,7 @@ function Navbar({ isLogged, onLogout }) {
               ishome ? 
               <div className='flex items-center gap-5'>
                 <p>Ready to Airbnb it?</p>
-                <button className='bg-[#FF385C] text-white py-3 px-4 rounded md:right-2 hover:bg-[#E31C5A] max-md:bg-transparent max-md:text-black max-md:left-[1%] max-md:text-[1.3rem] max-md:right max-md:hover:bg-white'>Airbnb Setup</button>
+                <button className='bg-[linear-gradient(to_right,#E61E4D_0%,#E31C5F_50%,#D70466_100%)] text-white py-3 px-4 rounded md:right-2 hover:bg-[#E31C5A] max-md:text-black max-md:left-[1%] max-md:text-[1.3rem] max-md:right max-md:hover:bg-white airSetup'>Airbnb Setup</button>
               </div>
               :
               <>
