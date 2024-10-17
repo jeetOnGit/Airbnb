@@ -30,9 +30,9 @@ function AirbnbYourRoom() {
           throw new Error("Failed to fetch banner data");
         }
         const bannerData = await response.json();
-        const banners = bannerData.data.banners;
+        const banners = bannerData?.data?.banners;
 
-        const imageDataArray1 = banners[0].image.data.data;
+        const imageDataArray1 = banners[0]?.image?.data?.data;
         const uint8Array1 = new Uint8Array(imageDataArray1);
         const blob1 = new Blob([uint8Array1], {
           type: banners[0].image.contentType,
@@ -40,7 +40,7 @@ function AirbnbYourRoom() {
         const imageUrl1 = URL.createObjectURL(blob1);
         setImageSrc1(imageUrl1);
 
-        const imageDataArray2 = banners[1].image.data.data;
+        const imageDataArray2 = banners[1]?.image?.data?.data;
         const uint8Array2 = new Uint8Array(imageDataArray2);
         const blob2 = new Blob([uint8Array2], {
           type: banners[1].image.contentType,

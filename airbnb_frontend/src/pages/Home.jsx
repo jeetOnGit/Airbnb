@@ -34,7 +34,7 @@ function Home() {
 
         {
           hotelData.length > 0 ? (
-          <section className='grid grid-cols-4 justify-items-center max-[1200px]:grid-cols-3 max-[960px]:grid-cols-2 max-[670px]:grid-cols-1 gap-3 gap-y-5 text-[#6a6a6a]'>
+          <section className='grid grid-cols-4 max-[1200px]:grid-cols-3 max-[960px]:grid-cols-2 max-[670px]:grid-cols-1 gap-3 gap-y-5 text-[#6a6a6a]'>
           {
             
               hotelData.map(hotel => (
