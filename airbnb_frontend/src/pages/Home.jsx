@@ -31,43 +31,21 @@ function Home() {
     <main className=''>
       
       <div className='myContainer mx-auto px-4 pt-8 '>
-        {/* <section className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-3 gap-y-5 text-[#6a6a6a]'>
-          {
-            hotelData.length > 0 ?  (
-              hotelData.map(hotel => (
-                <div className='event flex flex-col relative'>
-                <button className='absolute bg-black px-4 py-3 right-3 top-3 rounded-full text-white'>
-                  <i className="fa-solid fa-arrow-up-from-bracket " />
-                </button>
-                <img className='rounded-2xl mb-3' src="https://placehold.co/300x350" alt="" />
-                <p className='text-[#000]'>{hotel.name}</p>
-                <p>{hotel.price}</p>
-                <p className='text-[#000] font-medium'>Amenities: {hotel.amenities}</p>
-              </div>
-              ))
-            ) : (
-              <ScaleLoader className='text-center mt-4 w-full'
-            color={color}
-            loading='true'
-            size={150}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
-            )
-          }
-        
-        </section> */}
+
         {
           hotelData.length > 0 ? (
-          <section className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-3 gap-y-5 text-[#6a6a6a]'>
+          <section className='grid grid-cols-4 justify-items-center max-[1200px]:grid-cols-3 max-[960px]:grid-cols-2 max-[670px]:grid-cols-1 gap-3 gap-y-5 text-[#6a6a6a]'>
           {
             
               hotelData.map(hotel => (
                 <div className='event flex flex-col relative'>
-                <button className='absolute bg-black px-4 py-3 right-3 top-3 rounded-full text-white'>
+                
+                <div className='w-[300px] h-[350px] bg-[#6a6a6a] rounded-lg bg-cover bg-center mb-2 relative' style={{ backgroundImage: 'url(images/mansion.jpg)' }}>
+                  {/* <img className='absolute' src="images/mansion.jpg" alt="" /> */}
+                  <button className='absolute bg-black px-4 py-3 right-[2%] top-3 rounded-full text-white'>
                   <i className="fa-solid fa-arrow-up-from-bracket " />
                 </button>
-                <img className='rounded-2xl mb-3' src="https://placehold.co/300x350" alt="" />
+                </div>
                 <p className='text-[#000]'>{hotel.name}</p>
                 <p>{hotel.price}</p>
                 <p className='text-[#000] font-medium'>Amenities: {hotel.amenities}</p>
