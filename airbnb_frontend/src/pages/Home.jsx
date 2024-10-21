@@ -40,15 +40,15 @@ function Home() {
               hotelData.map(hotel => (
                 <div className='event flex flex-col relative'>
                 
-                <div className='w-[300px] h-[350px] bg-[#6a6a6a] rounded-lg bg-cover bg-center mb-2 relative' style={{ backgroundImage: 'url(images/mansion.jpg)' }}>
-                  {/* <img className='absolute' src="images/mansion.jpg" alt="" /> */}
-                  <button className='absolute bg-black px-4 py-3 right-[2%] top-3 rounded-full text-white'>
-                  <i className="fa-solid fa-arrow-up-from-bracket " />
+                <div className='w-[300px] h-[350px] bg-[#6a6a6a] rounded-lg bg-cover bg-center mb-2 relative' style={{ backgroundImage: `url(${hotel.imageUrl})` }}>
+                  {/* <img className='absolute' src={hotel.imageUrl} alt="" /> */}
+                <button className='absolute bg-black px-4 py-3 right-[2%] top-3 rounded-full text-white'>
+                  <i className="fa-regular fa-heart " />
                 </button>
                 </div>
                 <p className='text-[#000]'>{hotel.name}</p>
-                <p>{hotel.price}</p>
-                <p className='text-[#000] font-medium'>Amenities: {hotel.amenities}</p>
+                <p><span className='font-semibold text-black'>${hotel.price}</span> per night</p>
+                <p className='text-[#6a6a6a] font-medium'>Amenities: {hotel.amenities.join(", ")}</p>
               </div>
               ))
           
