@@ -106,7 +106,7 @@ function AirbnbYourRoom() {
                   <i className="fa-solid fa-magnifying-glass text-[#E31C5A]" />
                 </div>
                 <div className="text-start">
-                  <p className="font-semibold">Kolkata</p>
+                  <p className="font-semibold">Bengaluru</p>
                   <p>Entire place • 2 bedroom</p>
                 </div>
               </button>
@@ -405,7 +405,7 @@ function AirbnbYourRoom() {
             <div className="">
               <h3 className="font-semibold text-[1.9rem]">Still have questions?</h3>
               <p className="text-[#6a6a6a] my-4">Get answers from an experienced Superhost near you.</p>
-              <button className="border border-[#222] rounded-lg px-3 py-2 text-[14px]">Match with a Superhost</button>
+              <button className="border border-[#222] rounded-lg px-3 py-2 text-[14px]"><Link to='/'>Match with a Superhost</Link></button>
             </div>
           </div>
         </div>
